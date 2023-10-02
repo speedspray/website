@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Roboto:wght@100;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #282D64;
+    --secondary-color: #56A7DE;
+    --third-color: #F6F6F6;
+
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Oswald", sans-serif;
+    --third-font: "Kanit", sans-serif;
+
+    --primary-text-color: black;
+}
+
+body{
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+}
+
+:root{
+    font-size: 14px;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    :root{
+        font-size: 12px;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    :root{
+        font-size: 10px;
+    }
+}

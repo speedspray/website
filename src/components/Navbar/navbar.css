@@ -1,0 +1,80 @@
+#mainNav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+    height: 5vw;
+}
+
+.nav-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainLogo{
+    height: 4vw;
+    margin-left: 1vw;
+}
+
+#mainNav menu{
+    margin-left: 2vw;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#mainNav menu li{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    margin: 0 1vw;
+    font-size: 1.4rem;
+}
+
+#callWrapper{
+    background-color: var(--primary-color);
+    padding-left: 10vw;
+    padding-right: 5vw;
+    position: relative;
+}
+#callWrapper::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left:-2px;
+    top:0;
+    width: 5vw;
+    height: 100%;
+    clip-path: polygon(100% 100%, 0 0, 0 100%);
+    background-color: white;
+}
+
+#callWrapper img{
+    height: 3vw;
+}
+
+#callWrapper .cta{
+    font-family: var(--secondary-font);
+    color: white;
+    margin-right: 5vw;
+    font-size: 4rem;
+}
+
+#callWrapper a{
+    background-color: var(--secondary-color);
+    font-family: var(--third-font);
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 0.1vw 1vw;
+}
+
+#callWrapper img{
+    height: 3vw;
+    margin-right: 1vw;
+}

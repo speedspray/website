@@ -1,0 +1,72 @@
+#mainHeader{
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainBg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    object-fit: cover;
+    z-index: -2;
+}
+#headerShader{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+.header-content-wrapper{
+    margin: 5vw;
+    max-width: 45vw;
+}
+
+#mainHeading{
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-size: 12rem;
+    line-height: 140%;
+}
+
+#secondaryHeading{
+    font-family: var(--third-font);
+    font-weight: bold;
+    font-size: 6rem;
+    color: white;
+}
+
+#subHeading{
+    font-family: var(--third-font);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 2.5rem;
+    padding-right: 30%;
+    color: white;
+}
+
+#licensedBadge{
+    margin: 1vw 0;
+    width: 5vw;
+    aspect-ratio: 1/1;
+}
+
+#servingArea{
+    font-family: var(--third-font);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    padding-right: 30%;
+    color: white;
+}
+#servingArea a{
+    color: white;
+}
