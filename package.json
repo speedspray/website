@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "updatemain": "git checkout -b main && echo 'Enter Commit Message' && read msg && git add -A && git commit -m \"$msg\" && git push origin main"
+    "updatemain": "git checkout main && echo 'Enter Commit Message' && read msg && git add -A && git commit -m \"$msg\" && git push origin main"
   },
   "dependencies": {
     "react": "^18.2.0",
