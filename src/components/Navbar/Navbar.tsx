@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className="nav-wrapper">
             <img src="./img/main-logo.jpeg" alt="Speed Spray Logo" id="mainLogo" />
             <menu id="navLinks">
-                <a href="#temp"><li>Contact</li></a>
+                <a href="#reviews"><li>Reviews</li></a>
                 <a href="#services"><li>Services</li></a>
                 <a href="#about"><li>About</li></a>
             </menu>

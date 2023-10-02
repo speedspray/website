@@ -3,3 +3,15 @@ interface ReviewType{
     name: string,
     desc: string
 }
+
+interface ServiceType{
+    title: string,
+    shortDesc: string,
+    imgSrc: string,
+    desc: string
+}
+
+interface PastWorkType{
+    src: string
+    title: string
+}

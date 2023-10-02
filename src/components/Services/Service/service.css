@@ -1,0 +1,44 @@
+.service{
+    width: 16vw;
+    height: 18vw;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    padding-bottom: 4vw;
+    position: relative;
+    user-select: none;
+}
+
+.service-img{
+    width: 100%;
+    pointer-events: none;
+}
+
+.service-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0.5vw 0.4vw;
+}
+
+.service-desc{
+    padding: 0 0.4vw 0.5vw 0.4vw;
+    line-height: 150%;
+}
+
+.service-cta{
+    position: absolute;
+    width: 80%;
+    left:10%;
+    bottom: 1vw;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-weight: medium;
+    font-size: 1.3rem;
+    padding: 0.4vw 0;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.service-cta:hover{
+    filter: brightness(125%);
+}
