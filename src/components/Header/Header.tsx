@@ -1,4 +1,5 @@
 import "./header.css"
+import FreeEstimateForm from "../FreeEstimateForm/FreeEstimateForm"
 
 export default function Header() {
   return (
@@ -17,7 +18,7 @@ export default function Header() {
       
       {/* FORM */}
       <div className="header-content-wrapper">
-
+        <FreeEstimateForm />
       </div>
 
       <div id="headerShader"></div>

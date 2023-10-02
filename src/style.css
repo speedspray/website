@@ -25,6 +25,12 @@ body{
     font-size: 14px;
 }
 
+h2{
+    font-family: var(--secondary-font);
+    font-size: 6rem;
+    text-align: center;
+}
+
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
     :root{

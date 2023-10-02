@@ -1,0 +1,65 @@
+.review{
+    user-select: none;
+    width: 15vw;
+    background-color: white;
+    padding: 1vw 2vw;
+    position: relative;
+}
+.review-style{
+    background-color: var(--secondary-color);
+    position: absolute;
+    top:0;
+    right:0;
+    width: 4vw;
+    height: 6vw;
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 100%);
+}
+
+.react-multi-carousel-item{
+    display: flex;
+    justify-content: center;
+}
+
+.review-rating{
+    margin: 0.4vw 0;
+}
+
+.review img{
+    user-select: none;
+    pointer-events: none;
+    width: 1.2vw;
+    aspect-ratio: 1/1;
+    margin: 0 0.05vw;
+}
+
+.review-name{
+    font-size: 1.6rem;
+    font-weight: bold;
+    z-index: 10;
+}
+.review-desc{
+    font-size: 1.1rem;
+    line-height: 150%;
+    padding-right: 5%;
+    overflow-y: scroll;
+    z-index: 10;
+    position: relative;
+    height: 9vw;
+}
+/* width */
+.review-desc::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .review-desc::-webkit-scrollbar-track {
+    background: transparent;
+    
+  }
+  
+  /* Handle */
+  .review-desc::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 999px;
+  }
