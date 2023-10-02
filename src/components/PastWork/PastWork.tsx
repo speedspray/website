@@ -32,7 +32,9 @@ export default function PastWork() {
             {pastWorkElems}
             </Carousel>
         </div>
-        <a href="#estimateFormTitle" className="estimate-button">Get a free estimate!</a>
+        <div className="center">
+            <a href="#estimateFormTitle" className="estimate-button">Get a free estimate!</a>
+        </div>
     </section>
   )
 }
