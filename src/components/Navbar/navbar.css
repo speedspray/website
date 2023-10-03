@@ -24,12 +24,27 @@
     list-style-type: none;
 }
 
-#mainNav menu li{
+#mainNav li{
     display: inline-block;
     text-decoration: none;
     color: var(--primary-text-color);
     margin: 0 1vw;
     font-size: 1.4rem;
+    position: relative;
+}
+#mainNav li::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    bottom: -2px;
+    left:0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: 0.4s width;
+}
+#mainNav li:hover::after{
+    width: 100%;
 }
 
 #callWrapper{
@@ -73,6 +88,11 @@
     font-size: 2rem;
     padding: 0.1vw 1vw;
     box-shadow: 0px 8px 8px rgba(0,0,0,0.4);
+    transition: 0.3s box-shadow,  0.3s transform;
+}
+#callWrapper a:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,1);
 }
 
 #callWrapper img{
