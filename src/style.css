@@ -8,12 +8,14 @@
     --primary-color: #282D64;
     --secondary-color: #56A7DE;
     --third-color: #F6F6F6;
+    --fourth-color: #2F2F2F;
 
     --primary-font: "Roboto", sans-serif;
     --secondary-font: "Oswald", sans-serif;
     --third-font: "Kanit", sans-serif;
 
     --primary-text-color: black;
+    --secondary-text-color: white;
 }
 
 body{

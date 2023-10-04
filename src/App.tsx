@@ -4,6 +4,7 @@ import Reviews from "./components/Reviews/Reviews"
 import Services from "./components/Services/Services"
 import PastWork from "./components/PastWork/PastWork"
 import AboutSection from "./components/AboutSection/AboutSection"
+import Footer from "./components/Footer/Footer"
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
     <Services />
     <PastWork />
     <AboutSection />
+    <Footer />
     </>
   )
 }

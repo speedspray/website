@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import "./service.css"
 
 interface ServicePropType extends ServiceType{
@@ -11,6 +12,14 @@ interface ServicePropType extends ServiceType{
 
 export default function Service(props: ServicePropType) {
 
+  const [ctaText, setCtaText] = useState("Click For More")
+
+  useEffect(()=>{
+    if(window.matchMedia("(max-width: 649px)").matches){
+      setCtaText("Tap For More")
+    }
+  }, [])
+
   function triggerDetailsPane(){
     props.setCurrentServiceDesc(props.desc)
     props.setCurrentServiceName(props.title)
@@ -23,7 +32,7 @@ export default function Service(props: ServicePropType) {
         <h3 className="service-title">{props.title}</h3>
         <p className="service-desc">{props.shortDesc}</p>
 
-        <button onClick={triggerDetailsPane} className="service-cta">Click For More</button>
+        <button onClick={triggerDetailsPane} className="service-cta">{ctaText}</button>
     </aside>
   )
 }
