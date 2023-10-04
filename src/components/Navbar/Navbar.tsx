@@ -1,6 +1,15 @@
+import { useEffect, useState } from "react"
 import "./navbar.css"
 
 export default function Navbar() {
+    const [numberText, setNumberText] = useState("833-988-WASH")
+
+    useEffect(()=>{
+        if(window.matchMedia("(max-width: 649px)").matches){
+            setNumberText("Tap To Call")
+        }
+    }, [])
+    
   return (
     <nav id="mainNav">
         <div className="nav-wrapper">
@@ -15,7 +24,7 @@ export default function Navbar() {
             <span className="cta">Call Now!</span>
             <a href="tel:833-988-9274" id="callLink">
                 <img src="./icons/phone.svg" alt="Phone Icon" />
-                <span>833-988-WASH</span>
+                <span>{numberText}</span>
             </a>
         </div>
     </nav>

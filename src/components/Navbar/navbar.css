@@ -99,3 +99,71 @@
     height: 3vw;
     margin-right: 1vw;
 }
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    #mainNav{
+        height: 6vw;
+    }
+    #callWrapper .cta{
+        font-size: 3.5rem;
+    }
+}
+@media only screen and (max-width: 990px){
+    #mainNav menu#navLinks{
+        display: none;
+    } 
+}
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #mainNav{
+        height: 10vw;
+    }
+    
+    #mainLogo{
+        height: 7vw;
+        margin-left: 2vw;
+    }
+    
+    #callWrapper .cta{
+        font-family: var(--secondary-font);
+        color: white;
+        margin-right: 5vw;
+        font-size: 4rem;
+    }
+    
+    #callWrapper a{
+        padding: 0.4vw 2vw;
+    }
+    
+    #callWrapper img{
+        height: 4vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #callWrapper{
+        padding-left: 15vw;
+    }
+    #mainNav{
+        height: 14vw;
+    }
+    
+    #mainLogo{
+        height: 9vw;
+        margin-left: 2vw;
+    }
+    
+    #callWrapper .cta{
+        display: none;
+    }
+    
+    #callWrapper a{
+        padding: 0.8vw 4vw;
+    }
+    
+    #callWrapper img{
+        height: 6vw;
+    }
+}

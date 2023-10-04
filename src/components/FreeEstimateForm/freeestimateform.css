@@ -89,25 +89,30 @@
     @media only screen and (max-width: 1400px){
         
         #estimateForm{
-            padding: 1.5rem;
-            width: 24rem;
-            min-height: 28rem;
+            width: 28vw;
         }
         
         #estimateFormTitle{
-            font-size: 3rem;
+            font-size: 2.5rem;
+        }
+        #estimateForm input, #estimateForm textarea{
+            padding-top: 1vw;
+            padding-bottom: 1vw;
         }
 }
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-    #formAndReviews{
-        min-height: 25vh;
-        padding: 2vw 0;
+    .header-content-wrapper:has(#estimateForm){
+        margin: 0 0 8vw 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     
     #estimateForm{
         padding: 2vw;
+        padding-top: 0;
         width: 45vw;
     }
     
@@ -118,37 +123,71 @@
     .input-wrapper{
         margin: 1vw;
     }
+    #estimateForm input, #estimateForm textarea{
+        padding-top: 1.5vw;
+        padding-bottom: 1.5vw;
+        font-size: 1.5rem;
+    }
+    .input-wrapper img{
+        left: 2%;
+    }
+    #formPhoneIcon:not(.company-name-icon){
+        left: 1%;
+    }
+    #estimateForm input[type="submit"]{
+        font-size: 1.8rem;
+    }
 }
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-    #formAndReviews{
-        min-height: 20vh;
-        padding: 2vh 0;
-        flex-direction: column;
+    .header-content-wrapper:has(#estimateForm){
+        margin: 0 0 8vw 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
-    
     #estimateForm{
-        padding: 2vh;
-        width: 80vw;
-        min-height: 20vh;
+        margin-top: 8vw;
+        padding: 4vw;
+        padding-top: 0;
+        width: 60vw;
     }
     
     #estimateFormTitle{
-        font-size: 2.5em;
+        font-size: 2.4em;
+        padding-bottom: 8vw;
+    }
+    .input-wrapper{
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    #estimateForm input, #estimateForm textarea{
+        padding-top: 2.2vw;
+        padding-bottom: 2.2vw;
+        font-size: 1.5rem;
+    }
+    .input-wrapper img{
+        left: 2%;
+    }
+    #formPhoneIcon:not(.company-name-icon){
+        left: 1%;
+    }
+    #estimateForm input[type="submit"]{
+        font-size: 1.8rem;
     }
 }
 
 /* VERY SMALL  MOBILE STYLES */
 @media only screen and (max-width: 290px){
-    #estimateFormTitle{
-        font-size: 1.6rem;
+    #estimateForm{
+        width: 80vw;
     }
-    #estimateForm input, #estimateForm textarea{
-        font-size: 1em;
-        width: 88%;
-        padding: 0.9rem 0;
-        padding-left: 12%;
-        
+    #estimateFormTitle{
+        font-size: 2rem;
+    }
+    .input-wrapper{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
     }
 }

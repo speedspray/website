@@ -70,3 +70,133 @@
 #servingArea a{
     color: white;
 }
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    #mainHeading{
+        font-size: 10rem;
+    }
+    
+    #secondaryHeading{
+        font-size: 4.5rem;
+    }
+    
+    #subHeading{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+    #servingArea{
+        font-size: 1.8rem;
+        padding-right: 20%;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #mainHeader{
+        min-height: 90vh;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    .header-content-wrapper{
+        margin: 10vw;
+        max-width: 100vw;
+    }
+    
+    #subHeading{
+        font-weight: 500;
+    }
+    
+    #licensedBadge{
+        margin:2vw 0;
+        width: 10vw;
+        aspect-ratio: 1/1;
+    }
+    
+    #servingArea{
+        font-size: 2.5rem;
+        padding-right: 0%;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #mainHeader{
+        min-height: 90vh;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    .header-content-wrapper{
+        margin: 1vw 0;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #mainHeading{
+        text-align: center;
+        font-size: 8rem;
+        margin-top: 20vw;
+        line-height: 120%;
+    }
+    
+    #secondaryHeading{
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    #subHeading{
+        text-align: center;
+        display: block;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-top: 6vw;
+        padding: 0 10%;
+    }
+    
+    #licensedBadge{
+        margin:2vw 0;
+        width: 15vw;
+        aspect-ratio: 1/1;
+    }
+    
+    #servingArea{
+        font-size: 2rem;
+        padding-right: 0%;
+}
+}
+
+/* VERY SMALL  MOBILE STYLES */
+@media only screen and (max-width: 290px){
+    #mainHeading{
+        font-size: 6rem;
+    }
+    
+    #secondaryHeading{
+        font-size: 3rem;
+    }
+    
+    #subHeading{
+        font-size: 2rem;
+        padding: 0 5%;
+    }
+    
+    #licensedBadge{
+        margin:4vw 0;
+        width: 18vw;
+        aspect-ratio: 1/1;
+    }
+    
+    #servingArea{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-right: 0%;
+}
+}
