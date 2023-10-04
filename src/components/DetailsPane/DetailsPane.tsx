@@ -62,7 +62,7 @@ export default function DetailsPane(props: detailsPaneProps) {
     window.location.href = "#estimateForm";
     formDetails.focus();
     formDetails.textContent = `Hi, I'm interested in ${props.name}.`;
-    formDetails.setSelectionRange(-1, -1);
+    document.getElementById("nameInput")?.focus()
   }
 
   useEffect(()=>{

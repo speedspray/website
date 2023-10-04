@@ -15,10 +15,6 @@
     padding: 1vw 3vw;
 }
 
-/* TABLET STYLES */
-@media only screen and (min-width: 650px) and (max-width: 990px){
- 
-}
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
@@ -29,7 +25,7 @@
     }
     #reviewSection{
         background-color: var(--primary-color);
-        padding: 6vw 0;
+        padding: 10vw 0;
     }
     #reviewSection h2{
         margin-bottom: 4vw;

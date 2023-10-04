@@ -34,6 +34,6 @@
 @media only screen and (max-width: 649px){
     #servicesSection{
         position: relative;
-        padding-bottom: 8vw;
+        padding: 10vw 0;
     }
 }

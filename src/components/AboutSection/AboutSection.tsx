@@ -1,4 +1,5 @@
 import "./aboutsection.css"
+import scrollToEstimateForm from "../../utils/scrollToEstimateForm"
 
 export default function AboutSection() {
   return (
@@ -10,7 +11,7 @@ export default function AboutSection() {
             <p id="aboutUsDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             <div className="center">
-                <a id="aboutUsLink" href="#estimateFormTitle" className="estimate-button">Get a free estimate!</a>
+                <a id="aboutUsLink" href="#" className="estimate-button" onClick={scrollToEstimateForm}>Get a free estimate!</a>
             </div>
         </div>
         

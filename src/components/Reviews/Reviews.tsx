@@ -1,4 +1,4 @@
-import "./Reviews.css"
+import "./reviews.css"
 import Review from "./Review/Review"
 import reviewData from "./reviewData"
 import LeaveReviewButton from "../LeaveReviewButton/LeaveReviewButton"

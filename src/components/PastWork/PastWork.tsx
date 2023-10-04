@@ -1,6 +1,7 @@
 import "./pastwork.css"
 import Carousel from "react-multi-carousel"
 import pastWorkData from "./pastWorkData"
+import scrollToEstimateForm from "../../utils/scrollToEstimateForm"
 
 const responsive = {
     allScreens: {
@@ -33,7 +34,7 @@ export default function PastWork() {
             </Carousel>
         </div>
         <div className="center">
-            <a href="#estimateFormTitle" className="estimate-button">Get a free estimate!</a>
+            <a href="#" onClick={scrollToEstimateForm} className="estimate-button">Get a free estimate!</a>
         </div>
     </section>
   )
