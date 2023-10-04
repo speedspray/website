@@ -1,6 +1,6 @@
 #aboutSection{
-    min-height: 80vh;
     position: relative;
+    padding: 5vw 0;
 }
 
 #aboutBg{
@@ -52,4 +52,43 @@
     color: white;
     text-decoration: none;
     background-color: var(--primary-color);
+}
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+    #aboutWrapper{
+        width: 50vw;
+    }
+    #aboutSection{
+        padding: 6vw 0;
+    }
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #aboutWrapper{
+        width: 60vw;
+    }
+    #aboutSection{
+        padding: 6vw 0;
+    }
+    #aboutUsDesc{
+        font-size: 1.3rem;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #aboutWrapper{
+        width: 80vw;
+    }
+    #aboutSection{
+        padding: 10vw 0;
+    }
+    #aboutUsDesc{
+        margin-top: 2vw;
+    }
+    #aboutUsLink{
+        margin-top: 4vw;
+    }
 }

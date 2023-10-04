@@ -78,7 +78,7 @@ export default function LeaveReviewButton(props: leaveReviewButtonPropType) {
 
   return (
     <div style={{display: (reviewKeys.length > 1) ? "inline-block": "none"}} id="leaveReviewButtonWrapper">
-      <button style={{marginRight: 0}} className="get-in-touch-button review-button-part" onClick={(reviewKeys.length < 1) ? singleMediaRedirect : toggleReviewMenu} id="leaveReviewButton">
+      <button style={{marginRight: 0}} className="estimate-button review-button-part" onClick={(reviewKeys.length < 1) ? singleMediaRedirect : toggleReviewMenu} id="leaveReviewButton">
       Leave a Review!
           </button>
       <div id="leaveReviewButtonMenu">

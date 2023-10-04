@@ -36,3 +36,47 @@
     width: 50vw;
     height: 25vw;
 }
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    #pastWorkSection{
+        padding: 3vw 0;
+    }
+    
+    #pastWorkTitle{
+        margin-bottom: 3vw;
+    }
+    #pastWorkWrapper{
+        width: 75vw;
+        height: 37.5vw;
+        margin-left: 12.5%;
+        margin-bottom: 3vw;
+    }
+    
+    .past-work-img{
+        width: 75vw;
+        height: 37.5vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    #pastWorkSection{
+        padding: 5vw 0;
+    }
+    
+    #pastWorkTitle{
+        margin-bottom: 5vw;
+    }
+    #pastWorkWrapper{
+        width: 80vw;
+        height: 40vw;
+        margin-left: 10%;
+        margin-bottom: 5vw;
+    }
+    
+    .past-work-img{
+        width: 80vw;
+        height: 40vw;
+    }
+}

@@ -3,11 +3,15 @@ import "./footer.css"
 export default function Footer() {
   return (
     <footer id="mainFooter">
+        <div id="footerTitle" className="footer-content">
+            <span className="title">SpeedSpray Pressure Washing</span>
+            <span className="copyright">© All rights reserved</span>
+        </div>
         <div className="footer-links-wrapper footer-content">
             <h4>Quicklinks</h4>
+            <a className="quicklink" href="#estimateForm">Contact</a>
             <a className="quicklink" href="#reviewSection">Reviews</a>
             <a className="quicklink" href="#servicesSection">Services</a>
-            <a className="quicklink" href="#aboutSection">About</a>
         </div>
         <div className="footer-links-wrapper footer-content">
             <h4>Contact</h4>
@@ -20,10 +24,7 @@ export default function Footer() {
                 <span>833-988-WASH</span>
             </a>
         </div>
-        <div id="footerTitle" className="footer-content">
-            <span className="title">SpeedSpray Pressure Washing</span>
-            <span className="copyright">© All rights reserved</span>
-        </div>
+        
     </footer>
   )
 }
