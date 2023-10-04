@@ -134,7 +134,7 @@
     
     .leave-review-button-item::after{
         left: 2vw;
-        top: 1.4vw;
+        top: 0.5vw;
         width: 4.5vw;
     }
 }

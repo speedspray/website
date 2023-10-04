@@ -67,3 +67,57 @@
     background: var(--primary-color);
     border-radius: 999px;
   }
+
+  /* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+    .review{
+        width: 20vw;
+        padding: 1.5vw 2.5vw;
+    }
+    .review-style{
+        width: 5vw;
+        height: 7vw;
+    }
+    
+    .review-rating{
+        margin: 0.6vw 0;
+    }
+    
+    .review img{
+        width: 1.8vw;
+    }
+    
+    .review-name{
+        font-size: 1.5rem;
+    }
+    .review-desc{
+        height: 10vw;
+    }
+}
+ 
+/* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+    .review{
+        width: 38vw;
+        padding: 3vw 4vw;
+    }
+    .review-style{
+        width: 7vw;
+        height: 10vw;
+    }
+    
+    .review-rating{
+        margin: 1vw 0;
+    }
+    
+    .review img{
+        width: 2.8vw;
+    }
+    
+    .review-name{
+        font-size: 1.5rem;
+    }
+    .review-desc{
+        height: 20vw;
+    }
+}

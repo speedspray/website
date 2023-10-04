@@ -3,31 +3,32 @@ import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css";
 import Service from "./Service/Service";
 import serviceData from "./serviceData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DetailsPane from "../DetailsPane/DetailsPane";
 
 const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 1401 },
       items: 5
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 5
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1400, min: 911 },
       items: 4
     },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
+    tablet: {
+      breakpoint: { max: 1024, min: 700 },
       items: 3
+    },
+    mobile: {
+      breakpoint: { max: 699, min: 0 },
+      items: 1
     }
   };
 
 export default function Services() {
 
+  const [isMobile, setIsMobile] = useState(false)
   const [currentServiceName, setCurrentServiceName] = useState("");
   const [currentServiceDesc, setCurrentServiceDesc] = useState("");
   const [currentImg, setCurrentImg] = useState("");
@@ -44,6 +45,12 @@ export default function Services() {
           />)
     })
 
+    useEffect(()=>{
+      if(window.matchMedia("(min-width: 291px) and (max-width: 649px)").matches){
+        setIsMobile(true)
+      }
+    }, [])
+
   return (
     <>
     <DetailsPane
@@ -58,6 +65,7 @@ export default function Services() {
         <Carousel
         responsive={responsive}
         infinite
+        centerMode={isMobile}
         >
             {serviceElems}
         </Carousel>

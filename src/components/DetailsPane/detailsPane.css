@@ -33,7 +33,7 @@
     background-color: white;
     transition: 0.3s transform;
     transform: translateX(100%);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     overflow: auto;
 }
 
