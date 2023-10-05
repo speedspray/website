@@ -1,45 +1,25 @@
 // import PhoneNumber from "./PhoneNumber/PhoneNumber"
 import { useRef, useState } from "react"
+import handleFormSubmit from "./handleFormSubmit"
 import "./freeestimateform.css"
 import emailIcon from "./icons/email.svg"
 import locationIcon from "./icons/location.svg"
 import personIcon from "./icons/person.svg"
 import phoneIcon from "./icons/phone.svg"
 import MessageStatus from "../MessageStatus/MessageStatus"
+import PopUpForm from "./PopupForm/PopupForm"
 
 export default function FreeEstimateForm() {
 
     const [status, setStatus] = useState("none")
     const formRef: any = useRef();
 
-    async function handleSubmit(evt: any) {
-        evt.preventDefault();
-        const formData = new FormData(evt.currentTarget);
-        const formProps = Object.fromEntries(formData);
-        
-        try{
-            setStatus("loading")
-            await fetch("https://formsubmit.co/1d3032db0df0eed839a581a7605a8689 ",{
-                method: "POST",
-                body: JSON.stringify(formProps),
-                headers: {
-                    'Content-Type': 'application/json'
-                  }
-            })
-        }catch(err){
-            console.error(err)
-            setStatus("error")
-        }finally{
-            setStatus("success")
-            formRef.current.reset()
-        }
-
-      }
 
   return (
     <>
+    <PopUpForm setStatus={setStatus} />
     <MessageStatus status={status} setStatus={setStatus}/>
-    <form ref={formRef} id="estimateForm" onSubmit={handleSubmit}>
+    <form ref={formRef} id="estimateForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef)}}>
         {/* <input type="hidden" name="_cc" value="example@gmail.com"/> */}
         <input type="hidden" name="_next" value={`${window.location.origin}?messagesuccess=true${location.hash}`}/>
         <input type="hidden" name="_captcha" value="false"/>
