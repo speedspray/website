@@ -85,20 +85,29 @@
     padding-left: 2%;
 }
 
-    /* Small Laptop Styles */
-    @media only screen and (max-width: 1400px){
-        
-        #estimateForm{
-            width: 28vw;
-        }
-        
-        #estimateFormTitle{
-            font-size: 2.5rem;
-        }
-        #estimateForm input, #estimateForm textarea{
-            padding-top: 1vw;
-            padding-bottom: 1vw;
-        }
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1920px){
+    #estimateForm{
+        width: 25vw;
+    }
+}
+
+
+/* Small Laptop Styles */
+@media only screen and (max-width: 1400px){
+    
+    #estimateForm{
+        width: 28vw;
+    }
+    
+    #estimateFormTitle{
+        font-size: 2.5rem;
+    }
+    #estimateForm input, #estimateForm textarea{
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
 }
 
 /* TABLET STYLES */

@@ -43,6 +43,16 @@
     filter: brightness(125%);
 }
 
+
+/* MEDIUM LAPTOP STYLES */
+@media only screen and (min-width: 1401px) and (max-width: 1920px){
+    .service{
+        width: 18vw;
+        height: 21vw;
+    }
+}
+
+
 /* SMALL LAPTOP STYLES */
 @media only screen and (min-width: 991px) and (max-width: 1400px){
     .service{
