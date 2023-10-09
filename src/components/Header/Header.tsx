@@ -9,7 +9,7 @@ export default function Header() {
         <div id="mainHeading">SpeedSpray</div>
         <h1 id="secondaryHeading">Pressure Washing</h1>
 
-        <div id="subHeading">Get it done right, Professional Results Guaranteed!</div>
+        <h2 id="subHeading">Get it done right, Professional Results Guaranteed!</h2>
 
         <img src="./img/licensed-logo.png" alt="licensed badge" id="licensedBadge" />
 
