@@ -4,7 +4,7 @@ export default function SalesSection() {
   return (
     <section id="salesSection">
         <h3>*Limited offer</h3>
-        <h1>50% Off!</h1>
+        <h1>30% Off!</h1>
         <h2>For all new clients</h2>
         <a href="#estimateForm" className="estimate-button">Get a free estimate!</a>
 
