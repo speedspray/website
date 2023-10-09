@@ -113,7 +113,7 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
             </div>
             <div className="input-wrapper">
             <img id="formLocationIcon" src={locationIcon} alt="Location Icon" />
-                <input required type="text" name="location" id="locationInput" placeholder={"Address"} />
+                <input required type="text" name="serviceAddress" id="locationInput" placeholder={"Service Address"} />
             </div>
             <div className="input-wrapper">
                 <textarea required maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>

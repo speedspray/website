@@ -41,13 +41,14 @@ export default function FreeEstimateForm() {
             </div>
             <div className="input-wrapper">
             <img id="formLocationIcon" src={locationIcon} alt="Location Icon" />
-                <input required type="text" name="location" id="locationInput" placeholder={"Address"} />
+                <input required type="text" name="serviceAddress" id="locationInput" placeholder={"Service Address"} />
             </div>
             <div className="input-wrapper">
                 <textarea required maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>
             </div>
 
             <input id="estimateFormSubmit" type="submit" value="Get Your Free Estimate!" />
+            <div className="form-disclaimer">We will never spam you or sell your data, the data entered will only be used to send estimates and invoices to.</div>
         </form>
     </>
   )

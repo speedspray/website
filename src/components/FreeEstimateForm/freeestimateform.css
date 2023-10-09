@@ -85,6 +85,12 @@
     padding-left: 2%;
 }
 
+.form-disclaimer{
+    padding: 1vw 1.5vw 0 1.5vw;
+    text-align: center;
+    font-weight: bold;
+}
+
 
 /* MEDIUM LAPTOP STYLES */
 @media only screen and (min-width: 1401px) and (max-width: 1900px){
@@ -112,6 +118,10 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
+    .form-disclaimer{
+        padding: 1.5vw 2vw 0 2vw;
+
+    }
     .header-content-wrapper:has(#estimateForm){
         margin: 0 0 8vw 0;
         width: 100%;
@@ -150,6 +160,10 @@
  
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
+    .form-disclaimer{
+        padding: 3vw 3.5vw 0 3.5vw;
+
+    }
     .header-content-wrapper:has(#estimateForm){
         margin: 0 0 8vw 0;
         width: 100%;
