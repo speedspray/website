@@ -15,9 +15,9 @@ export default function Footer() {
         </div>
         <div className="footer-links-wrapper footer-content">
             <h4>Contact</h4>
-            <a href="mailto:speedspraywebsite@outlook.com" className="contact-link email-contact-link">
+            <a href="mailto:speedsprayllc@gmail.com" className="contact-link email-contact-link">
                 <img src="./icons/email-light.svg" alt="Phone Icon" />
-                <span>speedspraywebsite@outlook.com</span>
+                <span>speedsprayllc@gmail.com</span>
             </a>
             <a href="tel:833-988-9274" className="contact-link">
                 <img src="./icons/phone-light.svg" alt="Phone Icon" />

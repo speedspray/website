@@ -6,7 +6,7 @@ export default async function handleFormSubmit(evt: any, setStatus: any, formRef
     
     try{
         setStatus("loading")
-        await fetch("https://formsubmit.co/1d3032db0df0eed839a581a7605a8689",{
+        await fetch("https://formsubmit.co/speedsprayllc@gmail.com",{
             method: "POST",
             body: JSON.stringify(formProps),
             headers: {
@@ -17,7 +17,6 @@ export default async function handleFormSubmit(evt: any, setStatus: any, formRef
         console.error(err)
         setStatus("error")
     }finally{
-        console.log("HEY")
         setStatus("success")
         formRef.current.reset()
     }

@@ -20,7 +20,9 @@ export default function FreeEstimateForm() {
     <PopUpForm setStatus={setStatus} />
     <MessageStatus status={status} setStatus={setStatus}/>
     <form ref={formRef} id="estimateForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef)}}>
-        {/* <input type="hidden" name="_cc" value="example@gmail.com"/> */}
+    <input type="hidden" name="_subject" value="New estimate request"/>
+
+
         <input type="hidden" name="_next" value={`${window.location.origin}?messagesuccess=true${location.hash}`}/>
         <input type="hidden" name="_captcha" value="false"/>
             
@@ -42,7 +44,7 @@ export default function FreeEstimateForm() {
                 <input required type="text" name="location" id="locationInput" placeholder={"Address"} />
             </div>
             <div className="input-wrapper">
-                <textarea maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>
+                <textarea required maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>
             </div>
 
             <input id="estimateFormSubmit" type="submit" value="Get Your Free Estimate!" />

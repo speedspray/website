@@ -93,9 +93,10 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
   return (
     <div id="popupFormWrapper" ref={wrapperRef} >
         <form ref={formRef} id="popupForm" onSubmit={(evt)=>{handleFormSubmit(evt, setStatus, formRef); closeForm()}}>
-        {/* <input type="hidden" name="_cc" value="example@gmail.com"/> */}
+    
         <input type="hidden" name="_next" value={`${window.location.origin}?messagesuccess=true${location.hash}`}/>
         <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_subject" value="New estimate request"/>
             
             <h2 id="popupFormTitle">Get a <em>Free</em><br />Estimate!</h2>
             <div className="input-wrapper">
@@ -115,7 +116,7 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
                 <input required type="text" name="location" id="locationInput" placeholder={"Address"} />
             </div>
             <div className="input-wrapper">
-                <textarea maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>
+                <textarea required maxLength={2000} name="message" id="messageInput" placeholder={"Any Additional Details..."}></textarea>
             </div>
 
             <input id="popupFormSubmit" type="submit" value="Get Your Free Estimate!" />
