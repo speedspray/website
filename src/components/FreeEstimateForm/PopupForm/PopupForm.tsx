@@ -14,6 +14,7 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
 
     function openForm(){
         wrapperRef.current.style.pointerEvents = "all";
+        wrapperRef.current.style.display = "flex";
         gsap.to(wrapperRef.current, {
             opacity: 1,
             ease: "power3.in",
@@ -27,6 +28,7 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
     }
     function closeForm(){
         wrapperRef.current.style.pointerEvents = "none";
+        wrapperRef.current.style.display = "none";
         gsap.to(wrapperRef.current, {
             opacity: 0,
             ease: "power3.out",

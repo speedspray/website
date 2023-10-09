@@ -36,7 +36,7 @@ export default function Reviews() {
         responsive={responsive}
         arrows={false}
         infinite
-        autoPlay
+        // autoPlay
         autoPlaySpeed={10000}
         >
             {reviewElems}
