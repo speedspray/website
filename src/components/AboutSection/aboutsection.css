@@ -46,6 +46,7 @@
     font-size: 1.4rem;
     font-weight: lighter;
     line-height: 150%;
+    white-space: pre-wrap;
 }
 #aboutUsLink{
     margin-top: 2vw;

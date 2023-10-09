@@ -42,7 +42,7 @@ export default function Reviews() {
             {reviewElems}
         </Carousel>
         <div id="leaveReviewWrapper">
-            <LeaveReviewButton google="https://google.com" facebook="https://google.com"/>
+            <LeaveReviewButton facebook="https://www.facebook.com/profile.php?id=61551575841665&mibextid=LQQJ4d" yelp="https://www.yelp.com/writeareview/biz/_MsAFvHPMEbwGVsZ4gIf_Q" />
         </div>
     </section>
   )
