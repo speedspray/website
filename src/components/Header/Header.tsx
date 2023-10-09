@@ -7,7 +7,7 @@ export default function Header() {
       {/* HEADER INFO */}
       <div className="header-content-wrapper">
         <div id="mainHeading">SpeedSpray</div>
-        <div id="secondaryHeading">Pressure Washing</div>
+        <h1 id="secondaryHeading">Pressure Washing</h1>
 
         <div id="subHeading">Get it done right, Professional Results Guaranteed!</div>
 
