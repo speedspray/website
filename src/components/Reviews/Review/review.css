@@ -50,6 +50,7 @@
     z-index: 10;
     position: relative;
     height: 9vw;
+    white-space: pre-wrap;
 }
 /* width */
 .review-desc::-webkit-scrollbar {
