@@ -6,7 +6,7 @@ export default async function handleFormSubmit(evt: any, setStatus: any, formRef
     
     try{
         setStatus("loading")
-        await fetch("https://formsubmit.co/speedsprayllc@gmail.com",{
+        await fetch("https://formsubmit.co/f8b0c2fb7ca73ff90947c4086277645e",{
             method: "POST",
             body: JSON.stringify(formProps),
             headers: {
