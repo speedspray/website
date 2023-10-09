@@ -120,6 +120,7 @@ export default function PopUpForm({setStatus}: {setStatus: any}) {
             </div>
 
             <input id="popupFormSubmit" type="submit" value="Get Your Free Estimate!" />
+            <div className="form-disclaimer">We will never spam you or sell your data, the data submitted will only be used to send estimates and invoices to.</div>
         
             <button id="popupFormClose" onClick={(evt)=>{
                 evt.preventDefault();

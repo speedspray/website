@@ -48,7 +48,7 @@ export default function FreeEstimateForm() {
             </div>
 
             <input id="estimateFormSubmit" type="submit" value="Get Your Free Estimate!" />
-            <div className="form-disclaimer">We will never spam you or sell your data, the data entered will only be used to send estimates and invoices to.</div>
+            <div className="form-disclaimer">We will never spam you or sell your data, the data submitted will only be used to send estimates and invoices to.</div>
         </form>
     </>
   )
